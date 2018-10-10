@@ -5,7 +5,7 @@ PODS:
   - RxSwift (4.3.1)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK (~> 7.30)
+  - Google-Mobile-Ads-SDK (~> 7.34.0)
   - RxCocoa (~> 4.3)
   - RxSwift (~> 4.3)
 
@@ -20,6 +20,6 @@ SPEC CHECKSUMS:
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 1e08fe790cd1060f613db333b755220360b80a36
+PODFILE CHECKSUM: 32d7d11975796db76a5e25ad81a37ff8a7e46e4d
 
 COCOAPODS: 1.6.0.beta.1

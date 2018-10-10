@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'Foundation'
   spec.dependency "RxSwift", "~> 4.3"
   spec.dependency "RxCocoa", "~> 4.3"
-  spec.dependency "GoogleMobileAds", "~>7.30.0"
+  spec.dependency "GoogleMobileAds", "~>7.34.0"
 
 end
