@@ -31,12 +31,12 @@ extension Reactive where Base: GADAdLoader {
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: RxGADAdLoaderDelegate {
+    public var delegate: DelegateProxy<GADAdLoader, GADAdLoaderDelegate> {
         return RxGADAdLoaderDelegateProxy.proxy(for: base)
     }
 
     // DelegateProxy Wrapper with nativeAd for delegate methods
-    public var nativeAdLoaderDelegate: RxGADUnifiedNativeAdLoaderDelegate {
+    public var nativeAdLoaderDelegate: DelegateProxy<GADAdLoader, GADUnifiedNativeAdLoaderDelegate> {
         return RxGADUnifiedNativeAdLoaderDelegateProxy.proxy(for: base)
     }
 

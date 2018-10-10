@@ -40,7 +40,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: RxGADInterstitialDelegate {
+    public var delegate: DelegateProxy<GADInterstitial, GADInterstitialDelegate> {
         return RxGADInterstitialDelegateProxy.proxy(for: base)
     }
 

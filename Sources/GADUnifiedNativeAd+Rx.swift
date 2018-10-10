@@ -83,7 +83,7 @@ extension Reactive where Base: GADUnifiedNativeAd {
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: RxGADUnifiedNativeAdDelegate {
+    public var delegate: DelegateProxy<GADUnifiedNativeAd, GADUnifiedNativeAdDelegate> {
         return RxGADUnifiedNativeAdDelegateProxy.proxy(for: base)
     }
 

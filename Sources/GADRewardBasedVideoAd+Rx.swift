@@ -37,7 +37,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: RxGADRewardBasedVideoAdDelegate {
+    public var delegate: DelegateProxy<GADRewardBasedVideoAd, GADRewardBasedVideoAdDelegate> {
         return RxGADRewardBasedVideoAdDelegateProxy.proxy(for: base)
     }
 

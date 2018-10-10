@@ -19,15 +19,14 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Sources", "*.swift"
 
+  spec.swift_version = '4.2'
+
   spec.requires_arc = true
+  spec.static_framework = true
 
   spec.frameworks = 'Foundation'
   spec.dependency "RxSwift", "~> 4.3"
   spec.dependency "RxCocoa", "~> 4.3"
   spec.dependency "Google-Mobile-Ads-SDK", "~> 7.34.0"
-
-  spec.pod_target_xcconfig= {
-      'SWIFT_VERSION' => '4.2'
-  }
 
 end
