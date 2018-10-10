@@ -99,7 +99,7 @@
 			name = Example;
 			sourceTree = "<group>";
 		};
-		55BEEE0B216DFE4E00E29001 /* DelegateProxy */ = {
+		55BEEE0E216DFEBC00E29001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				55BEEDF2216DFA9500E29001 /* GADAdLoaderDelegateProxy.swift */,
@@ -108,14 +108,6 @@
 				55BEEDF4216DFA9500E29001 /* GADRewardBasedVideoAdDelegateProxy.swift */,
 				55BEEDF5216DFA9500E29001 /* GADUnifiedNativeAdDelegateProxy.swift */,
 				55BEEDF1216DFA9500E29001 /* GADUnifiedNativeAdLoaderDelegateProxy.swift */,
-			);
-			path = DelegateProxy;
-			sourceTree = "<group>";
-		};
-		55BEEE0E216DFEBC00E29001 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				55BEEE0B216DFE4E00E29001 /* DelegateProxy */,
 				55BEEDFF216DFB3300E29001 /* GADRewardBasedVideoAd+Rx.swift */,
 				55BEEE01216DFBBD00E29001 /* GADInterstitial+Rx.swift */,
 				55BEEE03216DFBE600E29001 /* GADAdLoader+Rx.swift */,
