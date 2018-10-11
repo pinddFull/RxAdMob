@@ -1,25 +1,32 @@
 PODS:
   - Google-Mobile-Ads-SDK (7.34.0)
+  - RxAdMob (0.1.2):
+    - Google-Mobile-Ads-SDK (~> 7.34.0)
+    - RxCocoa (~> 4.3)
+    - RxSwift (~> 4.3)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK (~> 7.34.0)
+  - RxAdMob (~> 0.1.2)
   - RxCocoa (~> 4.3)
   - RxSwift (~> 4.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Google-Mobile-Ads-SDK
+    - RxAdMob
     - RxCocoa
     - RxSwift
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
+  RxAdMob: f7fd78031e8b733a4497ae08fff8bbca80ca508f
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 5aee0143c20f1e3b4206bcdc7b5bbd508916b560
+PODFILE CHECKSUM: 23d5eba106849fe815b1ec057d444db5db11cb00
 
 COCOAPODS: 1.6.0.beta.1

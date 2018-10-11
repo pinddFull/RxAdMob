@@ -15,16 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
 
-        let bannerViewController = BannerViewController()
-
-        window!.rootViewController = bannerViewController
+        window!.rootViewController = UIViewController()
         window!.makeKeyAndVisible()
 
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        GADMobileAds.configure(withApplicationID: "Your API Key")
 
         return true
     }
