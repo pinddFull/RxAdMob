@@ -7,13 +7,12 @@
 
 RxAdMob is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper for [GoogleAdMob](https://developers.google.com/admob/ios).
 
-## Example Usages
+## Example Usages (For Interstitial Ads)
 ### Initalize Google AdMob
 ```swift
 // Setup API Key on initialize mobile ads
 GADMobileAds.configure(withApplicationID: "Your API Key")
 ```
-## Example for Interstitial Ads
 ### Setup
 ```swift
 let interstitial = GADInterstitial(adUnitID: "Your UID")
