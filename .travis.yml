@@ -1,0 +1,9 @@
+osx_image: xcode10
+language: swift
+
+install: true
+
+env:
+  - BUILD="gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet; pod install
+script: xcodebuild build -scheme 'Example' -workspace 'RxAdMob.xcworkspace' -sdk iphonesimulator -desstination "name=iPhone 8" | xcpretty -c
+
