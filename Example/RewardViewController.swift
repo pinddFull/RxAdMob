@@ -39,8 +39,6 @@ class RewardViewController: UIViewController {
             .drive(button.rx.isEnabled)
             .disposed(by: disposeBag)
 
-        rewardInstance.load(GADRequest(), withAdUnitID: key)
-
         rewardInstance.rx.didRewardUser.asDriver()
             .drive(onNext: { videoAD, reward in
                 print("Did reward user - amount: \(reward.amount)")
