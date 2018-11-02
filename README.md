@@ -1,5 +1,5 @@
 # RxAdMob
-[![Travis CI](https://travis-ci.org/pinddFull/RxAdMob.svg?branch=master/)](https://travis-ci.org/pinddFull/RxAdMob)
+[![Build Status](https://travis-ci.org/pinddFull/RxAdMob.svg?branch=master)](https://travis-ci.org/pinddFull/RxAdMob)
 ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)
 [![Version](https://img.shields.io/cocoapods/v/RxAdMob.svg?style=flat)](http://cocoapods.org/pods/RxAdMob)
 [![Platform](https://img.shields.io/cocoapods/p/RxAdMob.svg?style=flat)](http://cocoapods.org/pods/RxAdMob)
@@ -7,13 +7,12 @@
 
 RxAdMob is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper for [GoogleAdMob](https://developers.google.com/admob/ios).
 
-## Example Usages
+## Example Usages (For Interstitial Ads)
 ### Initalize Google AdMob
 ```swift
 // Setup API Key on initialize mobile ads
 GADMobileAds.configure(withApplicationID: "Your API Key")
 ```
-## Example for Interstitial Ads
 ### Setup
 ```swift
 let interstitial = GADInterstitial(adUnitID: "Your UID")
@@ -31,17 +30,19 @@ interstitial.rx.isReady
 ```
 ### Delegates
 ```swift
+// func interstitialWillDismissScreen(_ ad: GADInterstitial)
 interstitial.rx.interstitialDidDismissScreen
     .asDriver()
     .drive(onNext: { interstitial in
         interstitial.load(GADRequest())
     })
     .disposed(by: disposeBag)
-
-interstitial.rx.interstitialDidReceiveAd
+    
+// interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError)
+interstitial.rx.didFailToReceiveAdWithError
     .asDriver()
-    .drive(onNext: { interstitial in
-        print("Interstitial did receive ad")
+    .drive(onNext: { interstitial, error in
+        print("Interstitial did fail to receive error: \(error.description)")
     })
     .disposed(by: disposeBag)
 ```
