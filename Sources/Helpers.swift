@@ -19,11 +19,3 @@ extension ObservableType {
         return self.filter { $0 != nil }.map { $0! }
     }
 }
-
-func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
-    guard let returnValue = object as? T else {
-        throw RxCocoaError.castingError(object: object, targetType: resultType)
-    }
-    
-    return returnValue
-}
