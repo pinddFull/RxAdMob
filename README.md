@@ -1,6 +1,6 @@
 # RxAdMob
 [![Build Status](https://travis-ci.org/pinddFull/RxAdMob.svg?branch=master)](https://travis-ci.org/pinddFull/RxAdMob)
-![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)
+![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)
 [![Version](https://img.shields.io/cocoapods/v/RxAdMob.svg?style=flat)](http://cocoapods.org/pods/RxAdMob)
 [![Platform](https://img.shields.io/cocoapods/p/RxAdMob.svg?style=flat)](http://cocoapods.org/pods/RxAdMob)
 [![License](https://img.shields.io/cocoapods/l/RxAdMob.svg?style=flat)](http://cocoapods.org/pods/RxAdMob)
@@ -10,8 +10,12 @@ RxAdMob is a [RxSwift](https://github.com/ReactiveX/RxSwift) wrapper for [Google
 ## Example Usages (For Interstitial Ads)
 ### Initalize Google AdMob
 ```swift
-// Setup API Key on initialize mobile ads
-GADMobileAds.configure(withApplicationID: "Your API Key")
+// info.plist
+<key>GADApplicationIdentifier</key>
+<string>YOUR-API-KEY</string>
+```
+```swift
+GADMobileAds.sharedInstance().start()
 ```
 ### Setup
 ```swift
@@ -53,7 +57,7 @@ Add to `Podfile`:
 ```ruby
 pod 'RxAdMob'
 ```
-
+Than run `pod install` 
 
 ## Requirements
 - Swift 4.2
