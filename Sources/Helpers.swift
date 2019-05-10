@@ -13,9 +13,15 @@ import RxSwift
 import RxCocoa
 #endif
 
+func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
+    guard let returnValue = object as? T else {
+        throw RxCocoaError.castingError(object: object, targetType: resultType)
+    }
+    return returnValue
+}
 
 extension ObservableType {
-    internal func unwrap<T>() -> Observable<T> where E == T? {
+    internal func unwrap<T>() -> Observable<T> where Element == T? {
         return self.filter { $0 != nil }.map { $0! }
     }
 }
