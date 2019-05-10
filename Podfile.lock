@@ -1,32 +1,71 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.34.0)
-  - RxAdMob (0.1.2):
-    - Google-Mobile-Ads-SDK (~> 7.34.0)
-    - RxCocoa (~> 4.3)
-    - RxSwift (~> 4.3)
-  - RxCocoa (4.3.1):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.3.1)
+  - Google-Mobile-Ads-SDK (7.43.1):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.0.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (6.0.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.0.0)
+  - GoogleUtilities/Logger (6.0.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.0.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.0.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.0.0)"
+  - GoogleUtilities/Reachability (6.0.0):
+    - GoogleUtilities/Logger
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - RxAdMob (0.2.0):
+    - Google-Mobile-Ads-SDK (~> 7.43.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK (~> 7.34.0)
-  - RxAdMob (~> 0.1.2)
-  - RxCocoa (~> 4.3)
-  - RxSwift (~> 4.3)
+  - RxAdMob (from `./`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Google-Mobile-Ads-SDK
-    - RxAdMob
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - nanopb
     - RxCocoa
+    - RxRelay
     - RxSwift
 
+EXTERNAL SOURCES:
+  RxAdMob:
+    :path: "./"
+
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: a1cbce28c0c78ca1fb0b6c4f213485f55527c99f
-  RxAdMob: f7fd78031e8b733a4497ae08fff8bbca80ca508f
-  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
-  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  Google-Mobile-Ads-SDK: 9d3474acb70a6c12bfa69c9fe1ac28d7de8b9be9
+  GoogleAppMeasurement: 7f028ea162b72c8f326daec74afc95d94f7a47d6
+  GoogleUtilities: f1faafc033ea203adf1783ce00af455bb99d0e5b
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  RxAdMob: 10e07a4718c6563d6a2b17972d0677cdc6ec93b9
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 23d5eba106849fe815b1ec057d444db5db11cb00
+PODFILE CHECKSUM: 7c3d5df9968c6796026c663db5956bab9f52b8e3
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.6.1

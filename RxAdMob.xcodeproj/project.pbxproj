@@ -11,7 +11,6 @@
 		55535835216F237A007BA2DC /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55535834216F237A007BA2DC /* RewardViewController.swift */; };
 		555360CB216F19790073EF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555360CA216F19790073EF66 /* AppDelegate.swift */; };
 		555360D2216F197A0073EF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555360D1216F197A0073EF66 /* Assets.xcassets */; };
-		555360D5216F197A0073EF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555360D3216F197A0073EF66 /* LaunchScreen.storyboard */; };
 		555360DB216F1A2A0073EF66 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555360DA216F1A2A0073EF66 /* InterstitialViewController.swift */; };
 		55BEEDE7216DD06400E29001 /* RxAdMob.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BEEDE5216DD06400E29001 /* RxAdMob.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55BEEDF0216DD47200E29001 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEDEF216DD47200E29001 /* Helpers.swift */; };
@@ -29,18 +28,17 @@
 		55BEEE08216DFCD500E29001 /* GADUnifiedNativeAdView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEE07216DFCD500E29001 /* GADUnifiedNativeAdView+Rx.swift */; };
 		55BEEE0A216DFE1000E29001 /* GADAdReward+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEE09216DFE1000E29001 /* GADAdReward+Rx.swift */; };
 		55BEEE10216E073A00E29001 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 55BEEE0F216E073A00E29001 /* LICENSE */; };
-		8B60E7100C7DCD3C5D52788F /* Pods_RxAdMob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BB0DE8143AE1ECF251CC51 /* Pods_RxAdMob.framework */; };
+		F2D8C9EE2285EDC600EF3197 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D8C9ED2285EDC600EF3197 /* RxSwift.framework */; };
+		F2D8C9F02285EDD800EF3197 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D8C9EF2285EDD800EF3197 /* RxCocoa.framework */; };
+		F2D8C9F32285F6F700EF3197 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D8C9F22285F6F700EF3197 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03413118758E7297B719DA1F /* Pods-RxAdMob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAdMob.debug.xcconfig"; path = "Target Support Files/Pods-RxAdMob/Pods-RxAdMob.debug.xcconfig"; sourceTree = "<group>"; };
-		11DFADBABC43FC9C0E96D9FF /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		341F14C3A95945F08C6869C9 /* Pods-RxAdMob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAdMob.release.xcconfig"; path = "Target Support Files/Pods-RxAdMob/Pods-RxAdMob.release.xcconfig"; sourceTree = "<group>"; };
+		52FBA8F7AF355E8310858141 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		55535834216F237A007BA2DC /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
 		555360C8216F19790073EF66 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555360CA216F19790073EF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		555360D1216F197A0073EF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		555360D4216F197A0073EF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		555360D6216F197A0073EF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555360DA216F1A2A0073EF66 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
 		55BEEDE2216DD06400E29001 /* RxAdMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAdMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +59,12 @@
 		55BEEE07216DFCD500E29001 /* GADUnifiedNativeAdView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GADUnifiedNativeAdView+Rx.swift"; sourceTree = "<group>"; };
 		55BEEE09216DFE1000E29001 /* GADAdReward+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GADAdReward+Rx.swift"; sourceTree = "<group>"; };
 		55BEEE0F216E073A00E29001 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		BB5E02A863E382940B20ABC6 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		99DEBF078CFD06CC366EDA9B /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C50DAD0B702754D275FEDFC9 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BB0DE8143AE1ECF251CC51 /* Pods_RxAdMob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAdMob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D8C9ED2285EDC600EF3197 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		F2D8C9EF2285EDD800EF3197 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		F2D8C9F22285F6F700EF3197 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B60E7100C7DCD3C5D52788F /* Pods_RxAdMob.framework in Frameworks */,
+				F2D8C9F32285F6F700EF3197 /* GoogleMobileAds.framework in Frameworks */,
+				F2D8C9F02285EDD800EF3197 /* RxCocoa.framework in Frameworks */,
+				F2D8C9EE2285EDC600EF3197 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +95,6 @@
 				555360CA216F19790073EF66 /* AppDelegate.swift */,
 				555360DA216F1A2A0073EF66 /* InterstitialViewController.swift */,
 				555360D1216F197A0073EF66 /* Assets.xcassets */,
-				555360D3216F197A0073EF66 /* LaunchScreen.storyboard */,
 				555360D6216F197A0073EF66 /* Info.plist */,
 				55535834216F237A007BA2DC /* RewardViewController.swift */,
 			);
@@ -107,8 +109,8 @@
 				55BEEDE4216DD06400E29001 /* RxAdMob */,
 				555360C9216F19790073EF66 /* Example */,
 				55BEEDE3216DD06400E29001 /* Products */,
-				5A74A2F729D62C99D3EDE296 /* Pods */,
 				B61DCD1D854134FEBBE52F66 /* Frameworks */,
+				FE7315076F5FEBBAC745C239 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,24 +153,25 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		5A74A2F729D62C99D3EDE296 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				03413118758E7297B719DA1F /* Pods-RxAdMob.debug.xcconfig */,
-				341F14C3A95945F08C6869C9 /* Pods-RxAdMob.release.xcconfig */,
-				11DFADBABC43FC9C0E96D9FF /* Pods-Example.debug.xcconfig */,
-				BB5E02A863E382940B20ABC6 /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B61DCD1D854134FEBBE52F66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2D8C9F22285F6F700EF3197 /* GoogleMobileAds.framework */,
+				F2D8C9EF2285EDD800EF3197 /* RxCocoa.framework */,
+				F2D8C9ED2285EDC600EF3197 /* RxSwift.framework */,
 				D1BB0DE8143AE1ECF251CC51 /* Pods_RxAdMob.framework */,
 				C50DAD0B702754D275FEDFC9 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE7315076F5FEBBAC745C239 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99DEBF078CFD06CC366EDA9B /* Pods-Example.debug.xcconfig */,
+				52FBA8F7AF355E8310858141 /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,11 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55BEEDEA216DD06400E29001 /* Build configuration list for PBXNativeTarget "RxAdMob" */;
 			buildPhases = (
-				18058F5B28ECEC85C4C6BFDA /* [CP] Check Pods Manifest.lock */,
 				55BEEDDD216DD06400E29001 /* Headers */,
 				55BEEDDE216DD06400E29001 /* Sources */,
 				55BEEDDF216DD06400E29001 /* Frameworks */,
 				55BEEDE0216DD06400E29001 /* Resources */,
+				F2D8C9F12285EDEE00EF3197 /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -266,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555360D5216F197A0073EF66 /* LaunchScreen.storyboard in Resources */,
 				555360D2216F197A0073EF66 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,28 +284,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18058F5B28ECEC85C4C6BFDA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxAdMob-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4FA9E10AA3656668AC6C5094 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,20 +315,46 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F2D8C9F12285EDEE00EF3197 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Carthage Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -386,21 +392,10 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		555360D3216F197A0073EF66 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				555360D4216F197A0073EF66 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		555360D7216F197A0073EF66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11DFADBABC43FC9C0E96D9FF /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = 99DEBF078CFD06CC366EDA9B /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -413,14 +408,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.pindd.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		555360D8216F197A0073EF66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB5E02A863E382940B20ABC6 /* Pods-Example.release.xcconfig */;
+			baseConfigurationReference = 52FBA8F7AF355E8310858141 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -433,7 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.pindd.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -562,7 +557,6 @@
 		};
 		55BEEDEB216DD06400E29001 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03413118758E7297B719DA1F /* Pods-RxAdMob.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -572,6 +566,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RxAdMob/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -584,14 +583,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		55BEEDEC216DD06400E29001 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 341F14C3A95945F08C6869C9 /* Pods-RxAdMob.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -601,6 +599,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RxAdMob/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -612,7 +615,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.pindd.RxAdMob;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

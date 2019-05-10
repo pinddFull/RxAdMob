@@ -15,29 +15,29 @@ import RxSwift
 import RxCocoa
 #endif
 
-extension Reactive where Base: GADRewardBasedVideoAd {
+public extension Reactive where Base: GADRewardBasedVideoAd {
 
     // Just using rewardBasedVideoAd methods
-    public typealias RewardBasedVideoAdWithReward = (rewardBasedVideoAd: GADRewardBasedVideoAd, reward: GADAdReward)
-    public typealias RewardBasedVideoAdWithError = (rewardBasedVideoAd: GADRewardBasedVideoAd, error: Error)
+    typealias RewardBasedVideoAdWithReward = (rewardBasedVideoAd: GADRewardBasedVideoAd, reward: GADAdReward)
+    typealias RewardBasedVideoAdWithError = (rewardBasedVideoAd: GADRewardBasedVideoAd, error: Error)
 
     // Wrapper for `isReady` property.
-    public var isReady: Observable<Bool> {
+    var isReady: Observable<Bool> {
         return self.observeWeakly(Bool.self, "ready").unwrap()
     }
 
     // Wrapper for `adNetworkClassName` property.
-    public var adNetworkClassName: Observable<String?> {
+    var adNetworkClassName: Observable<String?> {
         return self.observeWeakly(String.self, "adNetworkClassName")
     }
 
     // Wrapper for `userIdentifier` property.
-    public var userIdentifier: Observable<String?> {
+    var userIdentifier: Observable<String?> {
         return self.observeWeakly(String.self, "userIdentifier")
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: DelegateProxy<GADRewardBasedVideoAd, GADRewardBasedVideoAdDelegate> {
+    var delegate: DelegateProxy<GADRewardBasedVideoAd, GADRewardBasedVideoAdDelegate> {
         return RxGADRewardBasedVideoAdDelegateProxy.proxy(for: base)
     }
 
@@ -60,7 +60,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didRewardUserWith reward: GADAdReward)`.
-    public var didRewardUser: ControlEvent<RewardBasedVideoAdWithReward> {
+    var didRewardUser: ControlEvent<RewardBasedVideoAdWithReward> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidRewardUser)
             .map(rewardBasedVideoAdWithReward)
 
@@ -68,7 +68,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd:GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdDidReceive: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdDidReceive: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidReceive)
             .map(rewardBasedVideoAd)
 
@@ -76,7 +76,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdDidOpen(_ rewardBasedVideoAd: GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdDidOpen: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdDidOpen: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidOpen)
             .map(rewardBasedVideoAd)
 
@@ -84,7 +84,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdDidStartPlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdDidStartPlaying: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdDidStartPlaying: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidStartPlaying)
             .map(rewardBasedVideoAd)
 
@@ -92,7 +92,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdDidCompletePlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdDidCompletePlaying: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdDidCompletePlaying: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidCompletePlaying)
             .map(rewardBasedVideoAd)
 
@@ -100,7 +100,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdDidClose: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdDidClose: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdDidClose)
             .map(rewardBasedVideoAd)
 
@@ -108,7 +108,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAdWillLeaveApplication(_ rewardBasedVideoAd: GADRewardBasedVideoAd)`.
-    public var rewardBasedVideoAdWillLeaveApplication: ControlEvent<GADRewardBasedVideoAd> {
+    var rewardBasedVideoAdWillLeaveApplication: ControlEvent<GADRewardBasedVideoAd> {
         let events = delegate.methodInvoked(.rewardBasedVideoAdWillLeaveApplication)
             .map(rewardBasedVideoAd)
 
@@ -116,7 +116,7 @@ extension Reactive where Base: GADRewardBasedVideoAd {
     }
 
     // Wrapper for method `rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didFailToLoadWithError error: Error)`.
-    public var didFailToLoadWithError: ControlEvent<RewardBasedVideoAdWithError> {
+    var didFailToLoadWithError: ControlEvent<RewardBasedVideoAdWithError> {
         let events = delegate.methodInvoked(.rewardBaseViewAdDidFailToLoadWithError)
             .map(rewardBasedVideoAdWithError)
 

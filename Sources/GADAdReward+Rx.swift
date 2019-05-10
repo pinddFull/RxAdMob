@@ -15,15 +15,15 @@ import RxSwift
 import RxCocoa
 #endif
 
-extension Reactive where Base: GADAdReward {
+public extension Reactive where Base: GADAdReward {
 
     // Wrapper for `type` property.
-    public var type: Observable<String> {
+    var type: Observable<String> {
         return self.observeWeakly(String.self, "type").unwrap()
     }
 
     // Wrapper for `amount` property
-    public var amount: Observable<NSDecimalNumber> {
+    var amount: Observable<NSDecimalNumber> {
         return self.observeWeakly(NSDecimalNumber.self, "amount").unwrap()
     }
 }

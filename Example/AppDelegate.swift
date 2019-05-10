@@ -16,11 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        window!.rootViewController = UIViewController()
-        window!.makeKeyAndVisible()
-
-        GADMobileAds.configure(withApplicationID: "Your API Key")
+        // Replace GADApplicationIdentifier value from info.plist
+        GADMobileAds.sharedInstance().start()
 
         return true
     }

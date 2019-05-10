@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RxAdMob"
-  spec.version      = "0.1.3"
+  spec.version      = "0.2.0"
   spec.summary      = "RxSwift Wrapper on Google AdMob"
   spec.license      = "MIT"
 
@@ -19,14 +19,14 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Sources", "*.swift"
 
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
   spec.requires_arc = true
   spec.static_framework = true
 
   spec.frameworks = 'Foundation'
-  spec.dependency "RxSwift", "~> 4.3"
-  spec.dependency "RxCocoa", "~> 4.3"
-  spec.dependency "Google-Mobile-Ads-SDK", "~> 7.30.0"
+  spec.dependency "RxSwift", "~> 5.0"
+  spec.dependency "RxCocoa", "~> 5.0"
+  spec.dependency "Google-Mobile-Ads-SDK", "~> 7.43.0"
 
 end
