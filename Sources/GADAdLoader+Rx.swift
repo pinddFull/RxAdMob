@@ -15,28 +15,28 @@ import RxSwift
 import RxCocoa
 #endif
 
-extension Reactive where Base: GADAdLoader {
+public extension Reactive where Base: GADAdLoader {
 
-    public typealias AdLoaderWithError = (adLoader: GADAdLoader, error: Error)
-    public typealias AdLoaderWithNativeAd = (adLoader: GADAdLoader, nativeAd: GADUnifiedNativeAd)
+    typealias AdLoaderWithError = (adLoader: GADAdLoader, error: Error)
+    typealias AdLoaderWithNativeAd = (adLoader: GADAdLoader, nativeAd: GADUnifiedNativeAd)
 
     // Wrapper for `adUnitID` property
-    public var adUnitID: Observable<String> {
+    var adUnitID: Observable<String> {
         return self.observeWeakly(String.self, "adUnitID").unwrap()
     }
 
     // Wrapper for `isLoading` property
-    public var isLoading: Observable<Bool> {
+    var isLoading: Observable<Bool> {
         return self.observeWeakly(Bool.self, "loading").unwrap()
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: DelegateProxy<GADAdLoader, GADAdLoaderDelegate> {
+    var delegate: DelegateProxy<GADAdLoader, GADAdLoaderDelegate> {
         return RxGADAdLoaderDelegateProxy.proxy(for: base)
     }
 
     // DelegateProxy Wrapper with nativeAd for delegate methods
-    public var nativeAdLoaderDelegate: DelegateProxy<GADAdLoader, GADUnifiedNativeAdLoaderDelegate> {
+    var nativeAdLoaderDelegate: DelegateProxy<GADAdLoader, GADUnifiedNativeAdLoaderDelegate> {
         return RxGADUnifiedNativeAdLoaderDelegateProxy.proxy(for: base)
     }
 
@@ -59,7 +59,7 @@ extension Reactive where Base: GADAdLoader {
     }
 
     // Wrapper for method `adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: GADRequestError)`.
-    public var adLoaderDidFailToReceiveAdWithError: ControlEvent<AdLoaderWithError> {
+    var adLoaderDidFailToReceiveAdWithError: ControlEvent<AdLoaderWithError> {
         let events = delegate.methodInvoked(.adLoaderDidFailToReceiveAdWithError)
             .map(adLoaderWithError)
 
@@ -67,7 +67,7 @@ extension Reactive where Base: GADAdLoader {
     }
 
     // Wrapper for method `adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADUnifiedNativeAd)`.
-    public var adLoaderDidReceiveUnifiedNativeAd: ControlEvent<AdLoaderWithNativeAd> {
+    var adLoaderDidReceiveUnifiedNativeAd: ControlEvent<AdLoaderWithNativeAd> {
         let events = nativeAdLoaderDelegate.methodInvoked(.adLoaderDidReceiveUnifiedNativeAd)
             .map(adLoaderWithNativeAd)
 
@@ -75,7 +75,7 @@ extension Reactive where Base: GADAdLoader {
     }
 
     // Wrapper for method `adLoaderDidFinishLoading(_ adLoader: GADAdLoader)`.
-    public var adLoaderDidFinishLoading: ControlEvent<GADAdLoader> {
+    var adLoaderDidFinishLoading: ControlEvent<GADAdLoader> {
         let events = delegate.methodInvoked(.adLoaderDidFinishLoading)
             .map(adLoader)
 

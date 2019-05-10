@@ -15,32 +15,32 @@ import RxSwift
 import RxCocoa
 #endif
 
-extension Reactive where Base: GADInterstitial {
+public extension Reactive where Base: GADInterstitial {
 
-    public typealias InterstitialWithError = (interstitial: GADInterstitial, error: Error)
+    typealias InterstitialWithError = (interstitial: GADInterstitial, error: Error)
 
     // Wrapper for `adUnitID` property
-    public var adUnitID: Observable<String?> {
+    var adUnitID: Observable<String?> {
         return self.observeWeakly(String.self, "adUnitID")
     }
 
     // Wrapper for `isReady` property
-    public var isReady: Observable<Bool> {
+    var isReady: Observable<Bool> {
         return self.observeWeakly(Bool.self, "isReady").unwrap()
     }
 
     // Wrapper for `hasBeenUsed` property
-    public var hasBeenUsed: Observable<Bool> {
+    var hasBeenUsed: Observable<Bool> {
         return self.observeWeakly(Bool.self, "hasBeenUseed").unwrap()
     }
 
     // Wrapper for `adNetworkClassName` property
-    public var adNetworkClassName: Observable<String?> {
+    var adNetworkClassName: Observable<String?> {
         return self.observeWeakly(String.self, "adNetworkClassName")
     }
 
     // DelegateProxy Wrapper for delegate methods
-    public var delegate: DelegateProxy<GADInterstitial, GADInterstitialDelegate> {
+    var delegate: DelegateProxy<GADInterstitial, GADInterstitialDelegate> {
         return RxGADInterstitialDelegateProxy.proxy(for: base)
     }
 
@@ -56,7 +56,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitialDidReceiveAd(_ ad: GADInterstitial)`.
-    public var interstitialDidReceiveAd: ControlEvent<GADInterstitial> {
+    var interstitialDidReceiveAd: ControlEvent<GADInterstitial> {
         let events = delegate.methodInvoked(.interstitialDidReceiveAd)
             .map(interstitial)
 
@@ -64,7 +64,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError)`.
-    public var didFailToReceiveAdWithError: ControlEvent<InterstitialWithError> {
+    var didFailToReceiveAdWithError: ControlEvent<InterstitialWithError> {
         let events = delegate.methodInvoked(.intersitialDidFailToReceiveAdWithError)
             .map(interstitialWithError)
 
@@ -72,7 +72,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitialWillPresentScreen(_ ad: GADInterstitial)`.
-    public var interstitialWillPresentScreen: ControlEvent<GADInterstitial> {
+    var interstitialWillPresentScreen: ControlEvent<GADInterstitial> {
         let events = delegate.methodInvoked(.interstitialWillPresentScreen)
             .map(interstitial)
 
@@ -80,7 +80,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitialWillDismissScreen(_ ad: GADInterstitial)`.
-    public var interstitialWillDismissScreen: ControlEvent<GADInterstitial> {
+    var interstitialWillDismissScreen: ControlEvent<GADInterstitial> {
         let events = delegate.methodInvoked(.interstitialWillDismissScreen)
             .map(interstitial)
 
@@ -88,7 +88,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitialDidDismissScreen(_ ad: GADInterstitial)`.
-    public var interstitialDidDismissScreen: ControlEvent<GADInterstitial> {
+    var interstitialDidDismissScreen: ControlEvent<GADInterstitial> {
         let events = delegate.methodInvoked(.interstitialDidDismissScreen)
             .map(interstitial)
 
@@ -96,7 +96,7 @@ extension Reactive where Base: GADInterstitial {
     }
 
     // Wrapper for method `interstitialWillLeaveApplication(_ ad: GADInterstitial)`.
-    public var interstitialWillLeaveApplication: ControlEvent<GADInterstitial> {
+    var interstitialWillLeaveApplication: ControlEvent<GADInterstitial> {
         let events = delegate.methodInvoked(.interstitialWillLeaveApplication)
             .map(interstitial)
 
